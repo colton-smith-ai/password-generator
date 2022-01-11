@@ -23,18 +23,10 @@ Containers simply run a binary executable. Executable generates a new secure pas
 password on cli. Container immediately die upon displaying password. Recommended to run containers
 with `--rm` option. 
 
-- ## Recommended Docker Commands
+- ## Docker Commands
 
     - ### Build Docker Image
-        ` $ docker build -t password-generator https://github.com/colton-smith-ai/password-generator.git#main`
+        ` $ docker build -t pass-gen https://github.com/colton-smith-ai/password-generator.git#main`
 
     - ### Run Image Containers
-        `$ docker run --rm password-generator`
-
-- ## Standard Docker Commands
-
-    - ### Build Docker Image
-        ` $ docker build -t image-name .`
-
-    - ### Run Image Containers
-        `$ docker run --name container-name --rm image-name`
+        `$ docker run --rm pass-gen`
