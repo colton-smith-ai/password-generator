@@ -1,5 +1,5 @@
 # Author
-> :raising_hand:      Colton Smith <br>
+> :wave:              Colton Smith <br>
 > :computer:          Data Science Engineer <br>
 > :mortar_board:      Carnegie Mellon MISM <br>
 > :incoming_envelope: colton.smith.ai@gmail.com <br>
@@ -23,8 +23,18 @@ Containers simply run a binary executable. Executable generates a new secure pas
 password on cli. Container immediately die upon displaying password. Recommended to run containers
 with `--rm` option. 
 
-- ## Build Docker Image
-    ` $ docker build -t image-name .`
+- ## Recommended Docker Commands
 
-- ## Run Image Containers
-    `$ docker run --name container-name --rm image-name`
+    - ### Build Docker Image
+        ` $ docker build -t password-generator https://github.com/colton-smith-ai/password-generator.git#main`
+
+    - ### Run Image Containers
+        `$ docker run --rm password-generator`
+
+- ## Standard Docker Commands
+
+    - ### Build Docker Image
+        ` $ docker build -t image-name .`
+
+    - ### Run Image Containers
+        `$ docker run --name container-name --rm image-name`
